@@ -1,0 +1,143 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_maskID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_transportFees",
+				"type": "uint256"
+			}
+		],
+		"name": "deliver",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_imageIPFS",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_manuLocation",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_manuFees",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_transporter",
+				"type": "address"
+			}
+		],
+		"name": "newMask",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_maskID",
+				"type": "uint256"
+			}
+		],
+		"name": "pay",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getMasksCount",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "masks",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "maskID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "imageIPFS",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "manufacturer",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "manuTime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "manuLocation",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "manuFees",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "transporter",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "transportTime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "transportFees",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "buyer",
+				"type": "address"
+			},
+			{
+				"internalType": "bool",
+				"name": "payementDone",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
