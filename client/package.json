@@ -6,8 +6,11 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
     "grommet": "^2.14.0",
+    "ipfs-api": "^26.1.2",
     "polished": "^3.6.5",
+    "qrcode-decoder": "^0.1.2",
     "qrcode.react": "^1.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -16,6 +19,7 @@
     "styled-components": "^5.1.1",
     "web3": "^1.2.11"
   },
+  "proxy": "http://localhost:5000",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

@@ -20,42 +20,82 @@
 	{
 		"inputs": [
 			{
-				"internalType": "string",
-				"name": "_imageIPFS",
-				"type": "string"
-			},
-			{
-				"internalType": "string",
-				"name": "_manuLocation",
-				"type": "string"
-			},
-			{
-				"internalType": "uint256",
-				"name": "_manuFees",
-				"type": "uint256"
-			},
-			{
-				"internalType": "address",
-				"name": "_transporter",
-				"type": "address"
-			}
-		],
-		"name": "newMask",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
 				"internalType": "uint256",
 				"name": "_maskID",
 				"type": "uint256"
 			}
 		],
-		"name": "pay",
-		"outputs": [],
-		"stateMutability": "payable",
+		"name": "getMaskInfo",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "maskID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "imageIPFS",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "weight",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "manufacturer",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "manuTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "manuLocation",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "manuFees",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "transporter",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "transportTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "transportFees",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "buyer",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "payementDone",
+						"type": "bool"
+					}
+				],
+				"internalType": "struct Masks.Mask",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
 		"type": "function"
 	},
 	{
@@ -90,6 +130,11 @@
 				"internalType": "string",
 				"name": "imageIPFS",
 				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "weight",
+				"type": "uint256"
 			},
 			{
 				"internalType": "address",
@@ -138,6 +183,52 @@
 			}
 		],
 		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_imageIPFS",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_weight",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_manuLocation",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_manuFees",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_transporter",
+				"type": "address"
+			}
+		],
+		"name": "newMask",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_maskID",
+				"type": "uint256"
+			}
+		],
+		"name": "pay",
+		"outputs": [],
+		"stateMutability": "payable",
 		"type": "function"
 	}
 ]
