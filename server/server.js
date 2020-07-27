@@ -7,7 +7,7 @@ const app = express();
 const port = new SerialPort('/COM17', { baudRate: 9600 });
 const parser = port.pipe(new Readline({ delimiter: '\n' }));
 
-var latestData;
+var latestData=23;
 
 // Read the port data
 port.on("open", () => {
@@ -19,7 +19,7 @@ parser.on('data', data =>{
 });
 
 app.get('/getSensorReading', (req, res) => {
-  res.send(latestData)
+  res.json(latestData)
 })
 
-app.listen(3000, () => console.log('server started, listening on port 3000'))
+app.listen(5000, () => console.log('server started, listening on port 5000'))
