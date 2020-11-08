@@ -22,10 +22,10 @@ The Application fetches the data from blockchain and displays it to the buyer.
 ![](https://i.imgur.com/K8w3LbK.png)
 The Buyer can see the entire history of the package and hence verify its authenticity.
 
-To pay the parties involved, the buyer clicks ob Pay button and sends the transaction in form of Ether.
+To pay the parties involved, the buyer clicks on Pay button and sends the transaction in form of R-BTC.
 
 Due to the peer-to-peer nature, the amount is split up and sent to the individual wallets of Manufacturer and Transporter without any Middlemen taking a cut.
-Here you can see it on Etherscan:
+Here you can see it on blockexplorer:
 
 ![](https://i.imgur.com/IU1corI.png)
 
