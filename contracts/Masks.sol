@@ -10,7 +10,7 @@ contract Masks {
     struct Mask {
         uint256 maskID;
         string imageIPFS;
-        uint256 weight;     //in gm
+        uint256 weight;     //in grams
         
         address manufacturer;
         uint256 manuTime;
